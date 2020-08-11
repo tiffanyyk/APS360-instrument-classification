@@ -9,8 +9,9 @@ The project was split into two stages. Stage 1 builds a single instrument classi
 * Install python 3.6 < 
 * Install the following packages in addition to a system compatible Pytorch package:
     ```python 
-    !pip install torchaudio==0.6.0
-    !pip install torchvision==0.7.0
+    pip install torchaudio==0.6.0
+    pip install torchvision==0.7.0
+    pip install -U scikit-learn
     ```
  
 ## Project Structure
