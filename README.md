@@ -33,7 +33,7 @@ Four instrument classes were selected for classification: acoustic guitar, piano
 
 | Class  | Number of samples |
 | ------- | ------------- |
-| Acoustic guitar | 637l  |
+| Acoustic guitar | 637  |
 | Piano | 721 |
 | Trumpet | 577 |
 | Violin | 580 |
