@@ -105,15 +105,15 @@ Analyzing the confusion matrix below for the first Stage, the trumpet class stan
 
 With the second Stage, the test accuracy for individual binary classifications was 69.74%. However, looking at the confusion matrix (Table 6), there are some interesting results when it came to classifying all four binary labels for each sample. Apart from the fact that around half the multi-label predictions classified an incorrect number of instruments (as shown in the rightmost column), a pattern that segregates the multi-label classes into two parts -- a group for the samples containing the guitar and another for the samples without the guitar. Within each subgroup of multi-label classes, there are high false positive and negative rates. It appears that the network has trouble differentiating between instrument pairs within the same subgroup. Additionally, misclassifications outside of those subgroups are rare in comparison. This interesting observation suggests that it is much easier to detect the presence of the guitar than it is to detect the presence of the piano, violin, or trumpet, when in a mixed setting. Perhaps in the future, experimentation could be done with more instruments or other instrument combinations to see whether this pattern occurs with other instruments. 
 
-| | Guitar + Piano | Guitar + Trumpet | Guitar + Violin | Piano + Trumpet | Piano + Violin | Trumpet + Violin | Other |
-| -------------- | -------------- | ---------------- | --------------- | -------=------- | -------------- | ---------------- | ----- |
-| Guitar + Piano | **21** | **35** | **32** | **2** | **1**| **1**| **65** |
-| Guitar + Trumpet | **20** | **25** | **19** | **2**| **0** | **0**| **75** |
-| Guitar + Violin |**11** | **13** | **70** | **0** | **3** | **1**| **44** |
-| Piano + Trumpet |**4** | **2** | **1** | **53** | **13** |**5** | **60** |
-| Piano + Violin |**1** | **4** | **11** | **25** | **13**| **15** | **70** |
-| Trumpet + Violin |**7** | **3** | **18** | **11** | **18** |**10**| **81** |
-| Other | **0** | **0** | **0** | **0** | **0** |**0** | **0** | 
+|  | Guitar + Piano | Guitar + Trumpet | Guitar + Violin | Piano + Trumpet | Piano + Violin | Trumpet + Violin | Other |
+| -------------- | ------- | ---- | ------- | ----- | ----- | ----- | ----- |
+| Guitar + Piano | **21** | **35** | **32** | **2** | **1** | **1** | **65** |
+| Guitar + Trumpet | **20** | **25** | **19** | **2** | **0** | **0** | **75** |
+| Guitar + Violin | **11** | **13** | **70** | **0** | **3** | **1** | **44** |
+| Piano + Trumpet | **4** | **2** | **1** | **53** | **13** | **5** | **60** |
+| Piano + Violin | **1** | **4** | **11** | **25** | **13** | **15** | **70** |
+| Trumpet + Violin | **7** | **3** | **18** | **11** | **18** | **10** | **81** |
+| Other | **0** | **0** | **0** | **0** | **0** | **0** | **0** | 
 
 ## Ethical Considerations
 In this project, good machine learning practices were maintained by proactively preventing model bias. It was ensured that the data used to train, validate, and test the model is balanced across classes. This is necessary during training to give the model equal opportunity to learn and generalize for classes. 
